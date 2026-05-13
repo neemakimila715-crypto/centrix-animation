@@ -1,75 +1,153 @@
 <!DOCTYPE html>
-<html lang="sw"
+<html lang="sw">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrix Animation Services</title>
+    <style>
+        /* CSS ya rangi na mpangilio */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
 
-     <meta charset="UTF-8">
-     <title>Centrix - animation service</title>
-     <style>
-       body {
-           font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
-           margin: 0;
-           padding: 0;
-           background-color: #f5f5dc;
-           color: #333;
-       }
-       header {
-           background-color: #008080;
-           color: white;  
-           padding: 60px 20px;
-           text-align: center;
-       }
-       .hero-title {
-           font size: 2.5em;
-           margin-bottom: 10px;
-       }
-       .container {
-           padding: 40px;
-           text-align: center;
-       }
-       .pricing-box {
-           background: white;
-           border: 2px solid #008080;
-           border-radius: 10px;
-           display: inline-block;
-           padding: 20px;
-           margin: 10px;
-           width: 250px;
-       }
-       .btn {
-          background-color: #ff7f50;
-          color: white;
-          padding: 10px 20px;
-          text-decoration:  none;
-          border-radius: 5px;
-          display: inline-block;
-          margin-top: 15px;
-       }
-     </style>
-   </head>
-   <body>
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-   <header>
-      <h1 class="hero-title">websites that dont feel like templates</h1>
-      <p>Pata tovuti yako kwa bei nafuu ndani ya masaa 48.</p>
-   </header>
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: white;
+            gap: 20px;
+        }
 
-   <div class="container">
-       <h2>bei zetu za huduma</h2>
+        .hero-content {
+            max-width: 500px;
+            text-align: left;
+        }
 
-       <div class="pricing-box">
-           <h3>landing page</h3>
-           <p><strong>50,000 TZS</strong></p>
-           <p>inafaa kwa biashara ndogo.</p>
-           <a href="mailto:yako@email.com"class="btn">anza sasa</a>
-           </div>
+        .hero-content h1 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
 
-           <div class="pricing-box">
-               <h3>Storefront</h3> 
-               <p><strong>200,000 TZS</strong></p>
-               <p>kwa ajili ya kuuza bidhaa.</p>
-               <a href="mailto:yako@email.com" class="btn">anza sasa</a>
-           </div>
-         </div>
+        .hero-image img {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
-         </body>
-         </html>
+        /* Sehemu ya Bei */
+        .pricing-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .price-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        .price-card h3 {
+            color: #2c3e50;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e67e22;
+            margin: 15px 0;
+        }
+
+        /* Vifungo */
+        .btn-whatsapp {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe57;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Centrix Animation</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Karibu Centrix Animation</h1>
+            <p>Tunahusika na kutengeneza katuni na animation zenye ubora wa hali ya juu kwa ajili ya kutangaza biashara yako au kutoa elimu. Tunapatikana Dodoma!</p>
+            <a href="https://wa.me/25585334909" class="btn-whatsapp">Tuma Ujumbe WhatsApp</a>
+        </div>
+        <div class="hero-image">
+            <!-- Hakikisha centrix.png ipo kwenye GitHub yako -->
+            <img src="centrix.PNG" alt="Centrix Character">
+        </div>
+    </section>
+
+    <!-- Bei Section -->
+    <section class="pricing-section">
+        <h2>Bei Zetu Za Huduma</h2>
+        <div class="pricing-container">
+            <div class="price-card">
+                <h3>Landing Page</h3>
+                <p class="price">50,000 TZS</p>
+                <p>Inafaa kwa biashara ndogo zinazoanza.</p>
+                <a href="https://wa.me/25585334909" class="btn-whatsapp">Anza Sasa</a>
+            </div>
+            <div class="price-card">
+                <h3>Storefront</h3>
+                <p class="price">200,000 TZS</p>
+                <p>Kwa ajili ya kuuza bidhaa zako kidijitali.</p>
+                <a href="https://wa.me/25585334909" class="btn-whatsapp">Anza Sasa</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Centrix Animation Service. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+</body>
+</html>
