@@ -3,151 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centrix Animation Services</title>
+    <title>Mwaliko wa Harusi - Centrix Digital</title>
     <style>
-        /* CSS ya rangi na mpangilio */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Georgia', serif;
+            background-color: #fff5f8;
+            color: #4a4a4a;
+            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
         }
 
-        header {
-            background-color: #1a1a1a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-            background-color: white;
-            gap: 20px;
-        }
-
-        .hero-content {
-            max-width: 500px;
-            text-align: left;
-        }
-
-        .hero-content h1 {
-            font-size: 32px;
-            color: #1a1a1a;
-            margin-bottom: 10px;
-        }
-
-        .hero-image img {
-            width: 250px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Sehemu ya Bei */
-        .pricing-section {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .pricing-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .price-card {
+        .container {
+            max-width: 600px;
+            margin: auto;
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            width: 280px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        .price-card h3 {
-            color: #2c3e50;
-        }
-
-        .price {
-            font-size: 24px;
+        h1 { color: #d63384; font-size: 28px; }
+        
+        .couple-names {
+            font-size: 35px;
             font-weight: bold;
-            color: #e67e22;
+            margin: 20px 0;
+            color: #d63384;
+        }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 10px;
             margin: 15px 0;
         }
 
-        /* Vifungo */
-        .btn-whatsapp {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #25d366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 10px;
+        .details {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
         }
 
-        .btn-whatsapp:hover {
-            background-color: #1ebe57;
+        .btn-map {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* Styling ya Fomu */
+        .contact-form {
+            background-color: #fdf2f7;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: left;
+            border: 1px solid #f2d1e1;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #d63384;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { background-color: #b02a6b; }
+
+        .btn-email-direct {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #d44638;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         footer {
-            text-align: center;
             padding: 20px;
-            background-color: #1a1a1a;
-            color: white;
-            margin-top: 40px;
+            font-size: 12px;
+            color: #999;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Centrix Animation</h1>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Karibu Centrix Animation</h1>
-            <p>Tunahusika na kutengeneza katuni na animation zenye ubora wa hali ya juu kwa ajili ya kutangaza biashara yako au kutoa elimu. Tunapatikana Dodoma!</p>
-            <a href="https://wa.me/25585334909" class="btn-whatsapp">Tuma Ujumbe WhatsApp</a>
+    <div class="container">
+        <div class="image-box">
+            <img src="maharusi.jpg" alt="Picha ya Maharusi">
         </div>
-        <div class="hero-image">
-            <!-- Hakikisha centrix.png ipo kwenye GitHub yako -->
-            <img src="centrix.PNG" alt="Centrix Character">
-        </div>
-    </section>
 
-    <!-- Bei Section -->
-    <section class="pricing-section">
-        <h2>Bei Zetu Za Huduma</h2>
-        <div class="pricing-container">
-            <div class="price-card">
-                <h3>Landing Page</h3>
-                <p class="price">50,000 TZS</p>
-                <p>Inafaa kwa biashara ndogo zinazoanza.</p>
-                <a href="https://wa.me/25585334909" class="btn-whatsapp">Anza Sasa</a>
-            </div>
-            <div class="price-card">
-                <h3>Storefront</h3>
-                <p class="price">200,000 TZS</p>
-                <p>Kwa ajili ya kuuza bidhaa zako kidijitali.</p>
-                <a href="https://wa.me/25585334909" class="btn-whatsapp">Anza Sasa</a>
-            </div>
-        </div>
-    </section>
+        <h1>Mwaliko wa Harusi</h1>
+        <p>Tunafurahi kukualika katika sherehe yetu ya upendo</p>
 
-    <footer>
-        <p>&copy; 2026 Centrix Animation Service. Haki zote zimehifadhiwa.</p>
-    </footer>
+        <div class="couple-names">Juma & Mariam</div>
+
+        <div class="details">
+            <p><strong>TAREHE:</strong> 25 Desemba, 2026</p>
+            <p><strong>MUDA:</strong> Saa 8:00 Mchana</p>
+            <p><strong>UKUMBI:</strong> Royal Village, Dodoma</p>
+        </div>
+
+        <a href="https://maps.google.com" target="_blank" class="btn-map">📍 Fungua Ramani</a>
+
+        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+        <div class="contact-form">
+            <h3 style="text-align: center; margin-bottom: 20px;">Weka Oda ya Kadi Yako</h3>
+            
+            <form action="https://formspree.io/f/MWEKEA_ID_YAKO_HAPA" method="POST">
+                <label>Jina Lako:</label>
+                <input type="text" name="name" placeholder="Andika jina lako" required>
+
+                <label>Namba ya Simu:</label>
+                <input type="tel" name="phone" placeholder="07XXXXXXXX" required>
+
+                <label>Unahitaji kadi ya aina gani?</label>
+                <textarea name="message" rows="4" placeholder="Mfano: Nahitaji kadi ya harusi yenye rangi nyekundu na dhahabu..." required></textarea>
+
+                <button type="submit" class="btn-submit">Tuma Ombi Sasa</button>
+            </form>
+            
+            <a href="mailto:email_yako@gmail.com" class="btn-email-direct">📧 Au tuma email moja kwa moja</a>
+        </div>
+    </div>
+
+    <footer><p>Imetengenezwa na Centrix Digital Services</p></footer>
+
+    <audio id="weddingMusic" loop><source src="wimbo.mp3" type="audio/mpeg"></audio>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('weddingMusic');
+            if (audio.paused) { audio.play(); }
+        });
+    </script>
 
 </body>
 </html>
